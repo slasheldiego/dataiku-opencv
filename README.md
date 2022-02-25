@@ -26,3 +26,10 @@ A dataset is a data structure with direct connection to a data source (Database,
 
 <img src="/images/dataiku-dataset-3.png?raw=true" width="300" height="400" alt="Dataset example"/>
 
+### Managed folders overview
+
+Another way to access data is the managed folders in Dataiku. Against Dataset, managed folders creates a structure to access to list of the files contained in the data source.
+
+We can create a managed folder through dataset creation options.
+
+<img src="/images/dataiku-folder-1.png?raw=true" width="300" height="400" alt="Create a managed folder"/>
