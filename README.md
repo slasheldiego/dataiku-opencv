@@ -8,4 +8,9 @@ We believe that this project will help some users (developers, data scientist or
 
 ## What are the different between Dataiku and other tools?
 
-Dataiku provide a framework (based on APIs) to access data so it is possible that your current developmens does not works well.
+Dataiku provide a framework (based on APIs) to access data through objects like Datasets or Managed Folders. So, it is possible that your current developmens does not works well.
+
+### Dataiku Dataset overview
+
+A dataset is a data structure with direct connection to a data source (Database, object storage, etc). For example, we can create a dataset based on a connection to a AWS S3 Bucket in order to access to a CSV file.
+
