@@ -16,9 +16,7 @@ A dataset is a data structure with direct connection to a data source (Database,
 
 <img src="/images/dataiku-dataset-1.png?raw=true" width="600" height="400" alt="Dataset section"/>
 
-<img src="/images/dataiku-dataset-2.png?raw=true" width="600" height="400" alt="Dataset list"/>
+<img src="/images/dataiku-dataset-2.png?raw=true" width="600" height="200" alt="Dataset list"/>
 
-<img src="/images/dataiku-dataset-3.png?raw=true" width="600" height="400" alt="Dataset example"/>
-![Figure 1: Dataset section](/images/dataiku-dataset-1.png?raw=true | width="200" height="200")
-![Figure 2: Dataset list](/images/dataiku-dataset-2.png?raw=true)
-![Figure 3: Dataset example](/images/dataiku-dataset-3.png?raw=true)
+<img src="/images/dataiku-dataset-3.png?raw=true" width="600" height="200" alt="Dataset example"/>
+
