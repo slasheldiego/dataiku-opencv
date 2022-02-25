@@ -14,6 +14,6 @@ Dataiku provide a framework (based on APIs) to access data through objects like 
 
 A dataset is a data structure with direct connection to a data source (Database, object storage, etc). For example, we can create a dataset based on a connection to a AWS S3 Bucket in order to access to a CSV file.
 
-![Figure 1: Dataset section](/images/dataiku-dataset-1.png?raw=true)
+![Figure 1: Dataset section](/images/dataiku-dataset-1.png?raw=true =200x200)
 ![Figure 2: Dataset list](/images/dataiku-dataset-2.png?raw=true)
 ![Figure 3: Dataset example](/images/dataiku-dataset-3.png?raw=true)
