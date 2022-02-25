@@ -32,4 +32,4 @@ Another way to access data is the managed folders in Dataiku. Against Dataset, m
 
 We can create a managed folder through dataset creation options.
 
-<img src="/images/dataiku-folders-1.png?raw=true" width="300" height="400" alt="Create a managed folder"/>
+<img src="/images/dataiku-folders-1.png?raw=true" width="600" height="400" alt="Create a managed folder"/>
