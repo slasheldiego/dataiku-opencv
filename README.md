@@ -32,8 +32,13 @@ Another way to access data is the managed folders in Dataiku. Against Dataset, m
 
 We can create a managed folder through dataset creation options.
 
+
+<b>Figure 4: Create a managed folder through NEW DATASET option</b>
+
 <img src="/images/dataiku-folders-1.png?raw=true" width="600" height="400" alt="Create a managed folder"/>
 
 As a part of the creation process we need to fill the name label and select a data source connection (e.g. AWS S3 Bucket). In this case, we will use the File System of the Dataiku Design node server.
+
+<b>Figure 5: Fill the creation form for managed folder</b>
 
 <img src="/images/dataiku-folders-2.png?raw=true" width="350" height="250" alt="Creation form"/>
