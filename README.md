@@ -2,6 +2,8 @@
 
 This project is focused in provide a guide to integrate the OpenCV framework with the Dataiku platform. 
 
+The project is composed by a set of subprojects where it will 
+
 ## Why is important?
 
 We believe that this project will help some users (developers, data scientist or data engineers) the currently works with OpenCV framework to understand how to migrate your OpenCV project to Dataiku seamlessly.
