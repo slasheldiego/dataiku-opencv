@@ -39,4 +39,4 @@ for img in [item["fullPath"] for item in mydataset.get_path_details()["children"
 plt.show()
 ```
 
-<img src="images/dataiku-opencv-framework1.png?raw=true" width="600" height="360" alt="Dataset section"/>
+<img src="images/dataiku-opencv-framework1.png?raw=true" width="600" height="360" alt="Show a list of images"/>
