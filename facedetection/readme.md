@@ -47,3 +47,23 @@ plt.show()
 
 
 <img src="images/dataiku-opencv-face-1.png?raw=true" width="600" height="350" alt="Dataset section"/>
+
+Finally, we can use face_cascade object and use the detectMultiScale function to perform the face detection.
+
+```python
+gray = cv2.cvtColor(img2, cv2.COLOR_BGR2GRAY)
+faces = face_cascade.detectMultiScale(gray,1.2,4)
+# Draw rectangle around the faces
+for (x, y, w, h) in faces:
+    cv2.rectangle(img2, (x, y), (x+w, y+h), (0, 255, 0), 20)
+# Display the output
+plt.imshow(img2)
+plt.show()
+```
+
+Before, an important step can be performed previous the face detection. The Viola & Jones approach does not use any color feature in the image so it is not necessary to use a RGB color model (considering three matrix for each color) instead we can only use a gray color model (only one matriz) during the detection process. This will reduce the detection process time because the algorithm required less data to compute. To do that we create a gray image version based on the original one (line 1).
+
+
+<img src="images/dataiku-opencv-face-2.png?raw=true" width="600" height="350" alt="Dataset section"/>
+
+The output of the detectMultiScale function is an object containing all the faces detect in the image. Main information this object has is the coordinate (x,y) where the start the crop of the detection and the width and height of the same. We use this information to draw a green rectangle in the original image.
