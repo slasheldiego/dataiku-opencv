@@ -1,4 +1,6 @@
-# Read an image from the Dataiku folder
+# Read an image from the Dataiku managed folder
+
+We need some libraries in order to be available to access to an image from Dataiku managed folder.
 
 ```python
   %pylab inline
@@ -11,3 +13,29 @@
   import matplotlib.pyplot as plt
 
   %matplotlib inline
+```
+
+Define a Folder structure 
+
+```
+mydataset = dataiku.Folder("ImagesTest")
+```
+
+Finally, go through all the images inside the folder and plot each one
+
+```
+i = 321
+for img in [item["fullPath"] for item in mydataset.get_path_details()["children"]]:
+    print(img)
+    with mydataset.get_download_stream(path=img) as stream:
+        nparr = np.fromstring(stream.read(), np.uint8)
+        img_np = cv2.imdecode(nparr, cv2.IMREAD_COLOR)
+        plt.subplot(i),plt.imshow(img_np, cmap='gray')
+        i = i + 1
+        stream.close()
+        if i == 327:
+            break
+ 
+plt.show()
+```
+
