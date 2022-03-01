@@ -24,5 +24,5 @@ As you can see CascadeClassifier function receive a parameter which is a file sy
 
 Now, turn back again in to the XML file. CascadeClassifier need a knowledge built training a Adaboost algorithm. However, there are previous pre-trained models available based on Haar Features. You can see more pre-trained models in this github project here. The pre-trained model are in XML format contained the output of the hyper-parameters and other metadata information that CascadeClassifier needs to create a classifier object. 
 
-<img src="images/haar_features.png?raw=true" width="600" height="200" alt="Dataset section"/>
+<img src="images/haar_features.png?raw=true" width="600" height="350" alt="Dataset section"/>
 
