@@ -26,3 +26,24 @@ Now, turn back again in to the XML file. CascadeClassifier need a knowledge buil
 
 <img src="images/haar_features.png?raw=true" width="600" height="350" alt="Dataset section"/>
 
+In this example we are interested in create a Face Classifier so we need the haarcascade_frontalface_Default.xml containing the information to detect frontal faces. You can download this file from github project we told previously but OpenCV library installation comes with a version of this file too. As you can see in previous code block we are referencing haarcascade_frontalface_Default.xml but concatenate it with cv2.data.haarcascades. This constant contains the path where this file is locate in the file system you are working the Dataiku project (Design node in this case).
+
+To this project we have created a Managed Folder called "skmp_folder" where we will upload the image we will use. To load the image using OpenCV we need to download the image as a bytes stream and then formate the stream as a numpy array using unsigned integer data type (line 3). Then, we decode the numpy array according with the OpenCV structure. OpenCV was built to recognize the colors in each image in BGR (Blue Green Red) but usually we use RGB color model so we need additionl step to parse BGR model to RGB model (line 5).
+
+```python
+ds2 = dataiku.Folder("skmp_folder")
+with ds2.get_download_stream(path='datateam.jpg') as stream:
+        nparr = np.fromstring(stream.read(), np.uint8)
+        img2 = cv2.imdecode(nparr, cv2.IMREAD_COLOR)
+        img2 = cv2.cvtColor(img2, cv2.COLOR_BGR2RGB)
+```
+
+You can show the loaded image in the notebook with:
+
+```python
+plt.imshow(img2)
+plt.show()
+```
+
+
+<img src="images/dataiku-opencv-face-1.png?raw=true" width="600" height="350" alt="Dataset section"/>
