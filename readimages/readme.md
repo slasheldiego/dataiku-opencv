@@ -17,13 +17,13 @@ We need some libraries in order to be available to access to an image from Datai
 
 Define a Folder structure 
 
-```
+```python
 mydataset = dataiku.Folder("ImagesTest")
 ```
 
 Finally, go through all the images inside the folder and plot each one
 
-```
+```python
 i = 321
 for img in [item["fullPath"] for item in mydataset.get_path_details()["children"]]:
     print(img)
